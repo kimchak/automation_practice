@@ -1,0 +1,9 @@
+config\TestConfig.class
+pages\BasePage.class
+config\WebDriverSingleton.class
+utilities\Actions.class
+tests\RegistrationTest.class
+pages\Registration.class
+pages\HomePage.class
+pages\ProfilePage.class
+pages\SignIn.class

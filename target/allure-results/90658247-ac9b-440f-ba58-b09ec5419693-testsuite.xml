@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1603138684638" stop="1603138728813" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>tests.RegistrationTest</name>
+    <test-cases>
+        <test-case start="1603138684691" stop="1603138710022" status="passed">
+            <name>successfulRegistration</name>
+            <steps>
+                <step start="1603138700388" stop="1603138702736" status="passed">
+                    <name>openSignInPage</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1603138702737" stop="1603138703192" status="passed">
+                    <name>registerWithEmail[libby.white@yahoo.com]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="NBLBARTKOWIAK"/>
+                <label name="thread" value="26408@NBLBARTKOWIAK.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1603138710109" stop="1603138728796" status="passed">
+            <name>failedRegistration</name>
+            <steps>
+                <step start="1603138720977" stop="1603138722846" status="passed">
+                    <name>openSignInPage</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1603138722847" stop="1603138723179" status="passed">
+                    <name>registerWithEmail[garnett.larson@gmail.com]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="host" value="NBLBARTKOWIAK"/>
+                <label name="thread" value="26408@NBLBARTKOWIAK.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
