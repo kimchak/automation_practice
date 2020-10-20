@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+import ru.yandex.qatools.allure.annotations.Step;
 
 public class Registration extends BasePage {
     Faker faker = new Faker();
@@ -40,6 +41,7 @@ public class Registration extends BasePage {
         super();
     }
 
+    @Step
     public void fillInRegistrationForm(boolean valid) {
         maleTitleRadioBtn.click();
         if (valid) {
@@ -57,12 +59,14 @@ public class Registration extends BasePage {
         phoneNumberInput.sendKeys(faker.phoneNumber().cellPhone());
     }
 
+    @Step
     public ProfilePage submitValidForm(){
         fillInRegistrationForm(true);
         submitFormBtn.click();
         return new ProfilePage();
     }
 
+    @Step
     public Registration submitInvalidForm(){
         fillInRegistrationForm(false);
         submitFormBtn.click();
